@@ -1,3 +1,11 @@
+server:
+  port: 8761
+
 spring:
   application:
-    name: eurekaserver
+    name: eureka-server
+
+eureka:
+  client:
+    register-with-eureka: false # 서버 본체이므로 자신을 등록하지 않음
+    fetch-registry: false       # 다른 서버 정보를 가져오지 않음
